@@ -1,0 +1,21 @@
+.Header {
+    display: flex;
+    height: 7vh;
+    background-color: black;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.HeaderRight {
+    margin-left: auto;
+}
+
+/* Material-ui */
+.MuiButton-label {
+    font-weight: 800;
+    color: white;
+}
+
+.MuiButton-root :hover {
+    color: orange;
+}
