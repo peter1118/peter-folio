@@ -1,0 +1,9 @@
+/* Material-ui */
+.MuiButton-label {
+    font-weight: 800;
+    color: white;
+}
+
+.MuiButton-root :hover {
+    color: orange;
+}
