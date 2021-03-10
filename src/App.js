@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import Header from './Header.js';
 import Home from './Home.js';
+import About from './About.js';
 import Footer from './Footer.js';
+import HeaderButton from './HeaderButton';
 
 import { useMediaQuery } from "react-responsive"
+import { Link, Route, BrowserRouter as Router } from "react-router-dom"
 
 function App() {
   const isPc = useMediaQuery({
@@ -17,13 +19,32 @@ function App() {
   const isMobile = useMediaQuery({
     query : "(max-width:767px)"
   });
-    //const page = 0; 0이면 home 1이면...
-    //이 값에 따라 어떤 component를 렌더할지 결정하겠지
-
     return (
         <div className="App">
-            <Header />
-            <Home />
+            <Router>
+                <div className='Header'>
+                <Link to="/">
+                    <HeaderButton name='Home' />
+                </Link>
+                <Link to="/about">
+                    <HeaderButton name='About' />
+                </Link>
+                <Link to="/work">
+                    <HeaderButton name='Work' />
+                </Link>
+                    <div className='HeaderRight'>
+                    <Link to="/contact">
+                        <HeaderButton name='Contact' />
+                    </Link>
+                    </div>
+                </div>
+                <Route exact path="/" component={Home} /> 
+                <Route exact path="/about" component={About} /> 
+                {/*
+                <Route path="/work" component={Work} /> 
+                <Route path="/contact" component={Contact} /> 
+                    */}
+            </Router>
             <Footer />
         </div>
     );
