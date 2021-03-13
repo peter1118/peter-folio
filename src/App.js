@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Home.js'
 import About from './About.js'
 import Footer from './Footer.js'
+import Work from './Work.js'
 import HeaderButton from './HeaderButton'
 
 import { Button } from '@material-ui/core'
@@ -73,8 +74,8 @@ function App() {
                 </div>
                 <Route exact path="/home" component={Home} />
                 <Route path="/about" component={About} />
+                <Route path="/work" component={Work} />
                 {/*
-                <Route path="/work" component={Work} /> 
                 <Route path="/contact" component={Contact} /> 
                     */}
             </Router>
