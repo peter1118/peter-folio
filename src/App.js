@@ -43,6 +43,7 @@ function App() {
                 <div className="Header">
                     <div className={classes.root}>
                         <Button
+                            className="Header-button"
                             component={NavLink}
                             to={'/home'}
                             activeClassName="Header-selected"
@@ -50,6 +51,7 @@ function App() {
                             Home
                         </Button>
                         <Button
+                            className="Header-button"
                             component={NavLink}
                             to={'/about'}
                             activeClassName="Header-selected"
@@ -57,6 +59,7 @@ function App() {
                             About
                         </Button>
                         <Button
+                            className="Header-button"
                             component={NavLink}
                             to={'/work'}
                             activeClassName="Header-selected"
@@ -66,7 +69,11 @@ function App() {
                     </div>
                     <div className="HeaderRight">
                         <div className={classes.root}>
-                            <Button component={Link} to={'/contact'}>
+                            <Button
+                                className="Header-button"
+                                component={Link}
+                                to={'/contact'}
+                            >
                                 Contact
                             </Button>
                         </div>

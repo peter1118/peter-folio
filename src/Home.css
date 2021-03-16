@@ -1,6 +1,7 @@
 .Home{
-    background-color: black;
-    color: white;
     width: 100vw;
     height: 86vh;
+    background-color: #ECECEF;
+    color: #161618;
+    margin: 0;
 }

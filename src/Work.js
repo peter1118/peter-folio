@@ -8,9 +8,7 @@ function Work() {
         <div className="Work">
             <div className="Work-title">
                 <div className="Work-title-main">Work</div>
-                <div className="Work-title-sub">
-                    Do Fails, as much as I can !
-                </div>
+                <div className="Work-title-sub"></div>
             </div>
             <div className="Work-list">
                 <div className="Work-list-title"></div>

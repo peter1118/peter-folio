@@ -5,7 +5,8 @@
 .Header {
     display: flex;
     height: 7vh;
-    background-color: black;
+    background-color: #262626;
+    color: #CDCDCD;
     padding-left: 6vw;
     padding-right: 6vw;
 }
@@ -14,7 +15,6 @@
     margin-left: auto;
 }
 
-
 /* Material-ui */
 .MuiButton-label {
     font-weight: 800;
@@ -22,10 +22,13 @@
 }
 .Header-selected > .MuiButton-label {
     font-weight: 800;
-    color: orange;
+    color: #EA7D4E;
 }
 
-.MuiButton-root :hover {
+a :hover {
+    color: #EBEBEB;
+}
+
+.MuiButtonBase-root :hover {
     font-weight: 800;
-    color: orange;
 }

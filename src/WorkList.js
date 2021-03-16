@@ -2,6 +2,7 @@ import React from 'react'
 import './WorkList.css'
 
 import { withStyles, makeStyles } from '@material-ui/core/styles'
+import rows from './WorkData.js'
 import {
     Table,
     TableBody,
@@ -12,23 +13,17 @@ import {
     Paper,
 } from '@material-ui/core'
 
-function createData(alias, year, title, at, tech, links) {
-    return { alias, year, title, at, tech, links }
-}
-
 const StyledTableCell = withStyles((theme) => ({
     head: {
-        backgroundColor: theme.palette.common.black,
-        color: theme.palette.common.white,
         fontWeight: 800,
-        borderBottom: 'none',
-        borderRight: 'none',
+        //color: theme.palette.warning.main,
+        color: theme.palette.common.black,
+        backgroundColor: theme.palette.common.white,
+        fontSize: 17
     },
     body: {
         fontSize: 14,
         fontWeight: 300,
-        borderBottom: 'none',
-        borderRight: 'none',
     },
 }))(TableCell)
 
@@ -37,11 +32,15 @@ const StyledTableRow = withStyles((theme) => ({
         '&:nth-of-type(odd)': {
             //backgroundColor: theme.palette.action.hover,
             backgroundColor: theme.palette.common.black,
+            color: theme.palette.common.white,
         },
         '&:nth-of-type(even)': {
             //backgroundColor: theme.palette.action.hover,
             backgroundColor: theme.palette.common.black,
+            color: theme.palette.common.white,
         },
+    },
+    head: {
         color: theme.palette.common.white,
     },
 }))(TableRow)
@@ -52,17 +51,6 @@ const useStyles = makeStyles({
     },
 })
 
-const rows = [
-    createData(
-        'COM프로젝트',
-        '2018 ~ 2019',
-        'test',
-        'Tmax Office',
-        'c++ weboskcet lws js ...',
-        'aaaaaa'
-    ),
-]
-
 function WorkList() {
     const classes = useStyles()
 
@@ -72,33 +60,31 @@ function WorkList() {
                 <TableHead>
                     <TableRow>
                         <StyledTableCell align="center">Year</StyledTableCell>
-                        <StyledTableCell align="right">Title</StyledTableCell>
-                        <StyledTableCell align="right">Made at</StyledTableCell>
+                        <StyledTableCell align="center">Title</StyledTableCell>
                         <StyledTableCell align="center">
                             Built with
                         </StyledTableCell>
-                        <StyledTableCell align="right">Links</StyledTableCell>
+                        <StyledTableCell align="center">Links</StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.alias}>
-                            <StyledTableCell component="th" scope="row">
+                        <TableRow key={row.alias}>
+                            <TableCell
+                                component="th"
+                                scope="row"
+                                align="center"
+                            >
                                 {row.year}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
+                            </TableCell>
+                            <TableCell
+                                align="center"
+                            >
                                 {row.title}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
-                                {row.at}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
-                                {row.tech}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
-                                {row.links}
-                            </StyledTableCell>
-                        </StyledTableRow>
+                            </TableCell>
+                            <TableCell align="center">{row.tech}</TableCell>
+                            <TableCell align="center">{row.links}</TableCell>
+                        </TableRow>
                     ))}
                 </TableBody>
             </Table>
