@@ -16,7 +16,6 @@ function Work() {
                     {data.map((row) => (
                         <WorkCard key={row.alias} work={row.alias} />
                     ))}
-                    sdfsdfsf
                 </div>
             </div>
         </div>
