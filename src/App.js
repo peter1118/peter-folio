@@ -5,7 +5,6 @@ import Home from './Home.js'
 import About from './About.js'
 import Footer from './Footer.js'
 import Work from './Work.js'
-import HeaderButton from './HeaderButton'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'

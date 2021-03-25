@@ -9,7 +9,7 @@
     width: 45vw;
     margin-top: 8vh;
     margin-bottom: 8vh;
-    padding-left: 1vw;
+    margin-left: 4vw;
     -webkit-animation: fadein 2s;
 }
 .Home-left-main {
@@ -40,6 +40,7 @@
     background-color: #ececef;
     margin-top: 8vh;
     margin-bottom: 8vh;
+    margin-right: 8vh;
     border-radius: 25px;
     text-align: center;
 }

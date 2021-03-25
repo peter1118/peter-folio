@@ -1,0 +1,10 @@
+.WorkCard-wrapper {
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    padding-top: 56px;
+    padding-bottom: 46px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    overflow: hidden;
+    display: block;
+}

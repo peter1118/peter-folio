@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WorkList.css'
 
 import { withStyles, makeStyles } from '@material-ui/core/styles'
-import rows from './WorkData.js'
 import {
     Table,
     TableBody,
@@ -13,13 +12,15 @@ import {
     Paper,
 } from '@material-ui/core'
 
+import rows from './WorkData.js'
+
 const StyledTableCell = withStyles((theme) => ({
     head: {
         fontWeight: 800,
         //color: theme.palette.warning.main,
         color: theme.palette.common.black,
         backgroundColor: theme.palette.common.white,
-        fontSize: 17
+        fontSize: 17,
     },
     body: {
         fontSize: 14,
@@ -53,42 +54,69 @@ const useStyles = makeStyles({
 
 function WorkList() {
     const classes = useStyles()
-
+    const [open, setOpen] = useState(false)
+    const [work, setWork] = useState('')
+    const onRowClicked = (work) => {
+        setOpen(true)
+        setWork(work)
+        console.log('card opened!')
+    }
+    const onCardClosed = () => {
+        setOpen(false)
+        console.log('card closed!')
+    }
+    /*
+    let card
+    if (work === '') {
+        card = <div />
+    } else if (work === 'COM프로젝트') {
+        card = <WorkListCard work={work} onclose={onCardClosed} />
+    } else if (work === 'test1') {
+        card = <WorkListCard work={work} onclose={onCardClosed} />
+    }*/
     return (
-        <TableContainer component={Paper}>
-            <Table className={classes.table} aria-label="work lists">
-                <TableHead>
-                    <TableRow>
-                        <StyledTableCell align="center">Year</StyledTableCell>
-                        <StyledTableCell align="center">Title</StyledTableCell>
-                        <StyledTableCell align="center">
-                            Built with
-                        </StyledTableCell>
-                        <StyledTableCell align="center">Links</StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.alias}>
-                            <TableCell
-                                component="th"
-                                scope="row"
-                                align="center"
-                            >
-                                {row.year}
-                            </TableCell>
-                            <TableCell
-                                align="center"
-                            >
-                                {row.title}
-                            </TableCell>
-                            <TableCell align="center">{row.tech}</TableCell>
-                            <TableCell align="center">{row.links}</TableCell>
+        <div>
+            <TableContainer component={Paper}>
+                <Table className={classes.table} aria-label="work lists">
+                    <TableHead>
+                        <TableRow>
+                            <StyledTableCell align="center">
+                                Year
+                            </StyledTableCell>
+                            <StyledTableCell align="center">
+                                Title
+                            </StyledTableCell>
+                            <StyledTableCell align="center">
+                                Built with
+                            </StyledTableCell>
+                            <StyledTableCell align="center">
+                                Links
+                            </StyledTableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+                    </TableHead>
+                    <TableBody>
+                        {rows.map((row) => (
+                            <TableRow key={row.alias}>
+                                <TableCell
+                                    component="th"
+                                    scope="row"
+                                    align="center"
+                                >
+                                    {row.year}
+                                </TableCell>
+                                <TableCell align="center">
+                                    {row.title}
+                                </TableCell>
+                                <TableCell align="center">{row.tech}</TableCell>
+                                <TableCell align="center">
+                                    {row.links}
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </div>
     )
 }
 
