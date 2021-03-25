@@ -10,7 +10,7 @@ function Work() {
         <div className="Work">
             <div className="Work-wrapper">
                 <div className="Work-top">
-                    <p>What I have donea,,,,,</p>
+                    <p>What I have done,,,,,</p>
                 </div>
                 <div className="Work-mid">
                     {data.map((row) => (
