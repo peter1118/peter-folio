@@ -13,10 +13,12 @@
     top: 5vh;
     padding: 2% 2%;
     box-shadow: 0 0 10px #c1c1c1;
+    border-radius: 20px;
 }
 .Work-top {
     display: flex;
     justify-content: center;
+    margin-bottom: 2vh;
 }
 .Work-top > p {
     margin: 0;
@@ -24,27 +26,4 @@
     font-size: 35px;
     font-weight: 600;
     color: #161618;
-}
-.Work-mid {
-    display: flex;
-    justify-content: center;
-}
-
-.Work-title {
-    color: #161618;
-    padding-top: 5vh;
-}
-.Work-title-main {
-    font-size: 50px;
-    font-weight: 500;
-}
-.Work-title-sub {
-    margin-top: 3vh;
-    font-weight: 500;
-    font-size: 3vh;
-}
-.Work-list {
-}
-.Work-list-list {
-    margin-top: 5vh;
 }

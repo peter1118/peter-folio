@@ -1,9 +1,10 @@
-function createData(alias, year, title, tech, links) {
-    return { alias, year, title, tech, links }
+function createData(idx, alias, year, title, tech, links) {
+    return { idx, alias, year, title, tech, links }
 }
 
 const rows = [
     createData(
+        0,
         'COM프로젝트',
         '2018 ~ 2019',
         'ttttttttttttttttttttttttttttttttttttttttttt',
@@ -11,6 +12,7 @@ const rows = [
         'aaaaaa'
     ),
     createData(
+        1,
         'test1',
         '2018 ~ 2019',
         'test',
@@ -19,5 +21,4 @@ const rows = [
     ),
 ]
 
-
-export default rows;
+export default rows
