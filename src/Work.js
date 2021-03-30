@@ -21,6 +21,7 @@ function Work() {
                 </div>
                 {startIdxList.map((startIdx) => (
                     <WorkCardWrapper
+                        key={startIdx}
                         startIdx={startIdx}
                         maxCount={cardNumPerLine}
                     />

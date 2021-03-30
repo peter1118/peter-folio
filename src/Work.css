@@ -16,11 +16,13 @@
     box-shadow: 0 0 10px #c1c1c1;
     border-radius: 20px;
 }
+
 .Work-top {
     display: flex;
     justify-content: center;
     margin-bottom: 2vh;
 }
+
 .Work-top > p {
     margin: 0;
     padding: 0;

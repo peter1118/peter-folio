@@ -11,7 +11,7 @@ function WorkCardWrapper({ startIdx, maxCount }) {
     return (
         <div className="WorkCardWrapper">
             {startIdxList.map((idx) => (
-                <WorkCard idx={idx} />
+                <WorkCard key={idx} idx={idx} />
             ))}
         </div>
     )

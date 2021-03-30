@@ -1,5 +1,5 @@
-function createData(idx, alias, year, title, tech, links) {
-    return { idx, alias, year, title, tech, links }
+function createData(idx, title, year, desc, tech, links) {
+    return { idx, title, year, desc, tech, links }
 }
 
 const rows = [
