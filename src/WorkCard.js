@@ -16,9 +16,10 @@ function WorkCard({ idx }) {
                 <div className="WorkCard-title">{data[idx]['title']}</div>
                 <div className="WorkCard-links">더 알아보기</div>
                 <div className="WorkCard-desc">
-            {//여기를 여러개 뚫고 map으로 li 돌려야겟다}
                     <ul>
-                        <li>{data[idx]['desc']}</li>
+                        {data[idx]['desc'].map((desc, index) => (
+                            <li key={index}>{desc}</li>
+                        ))}
                     </ul>
                 </div>
             </div>

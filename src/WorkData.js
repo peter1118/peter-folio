@@ -1,22 +1,21 @@
-function createData(idx, title, year, desc, tech, links) {
-    return { idx, title, year, desc, tech, links }
+function createData(title, year, desc, tech, links, from) {
+    return { title, year, desc, tech, links, from }
 }
 
 const rows = [
     createData(
-        0,
-        'COM프로젝트',
-        '2018 ~ 2019',
-        'ttttttttttttttttttttttttttttttttttttttttttt',
+        '다중 접속 원격 데스크톱 서비스',
+        '2019 ~ 2021',
+        ['c++ Websocket Javascript Linux', ''],
         'c++ weboskcet lws js ...',
-        'aaaaaa'
+        'aaaaaa',
+        'TmaxSoft그룹'
     ),
     createData(
-        1,
         'test1',
         '2018 ~ 2019',
+        ['c++ Websocket Javascript Linux', ''],
         'test',
-        'c++ weboskcet lws js ...',
         'aaaaaa'
     ),
 ]
