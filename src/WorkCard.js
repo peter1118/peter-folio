@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import './WorkCard.css'
 
 import data from './WorkData.js'
@@ -18,16 +18,6 @@ function WorkCard({ idx }) {
     const onDialogClosed = () => {
         setOpen(false)
     }
-    const descriptionElementRef = useRef(null)
-    React.useEffect(() => {
-        if (open) {
-            const { current: descriptionElement } = descriptionElementRef
-            if (descriptionElement !== null) {
-                descriptionElement.focus()
-            }
-        }
-    }, [open])
-
     if (idx + 1 > data.length) {
         return <div className="WorkCard-empty"> empty card</div>
     } else {
@@ -52,12 +42,7 @@ function WorkCard({ idx }) {
                         ))}
                     </ul>
                 </div>
-                <WorkCardMore
-                    idx={idx}
-                    open={open}
-                    onClose={onDialogClosed}
-                    eleRef={descriptionElementRef}
-                />
+                <WorkCardMore idx={idx} open={open} onClose={onDialogClosed} />
             </div>
         )
     }
