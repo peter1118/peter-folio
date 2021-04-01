@@ -21,8 +21,8 @@
 */
 .WorkCard-links {
     display: flex;
-    justify-content: center;
-    margin: 1vh 5vw;
+    justify-content: flex-end;
+    margin: 5px 3vw;
     border-bottom: 1px solid #c8c8ce;
 }
 .WorkCard-title {
@@ -43,5 +43,5 @@ li::marker {
     margin: 1vh 2.1vw;
 }
 .WorkCard-links-more > span {
-    color: #2c3494 !important;
+    color: #0a59bd !important;
 }

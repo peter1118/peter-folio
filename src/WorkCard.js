@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import './WorkCard.css'
 
 import data from './WorkData.js'
+import WorkCardMore from './WorkCardMore.js'
 import img1 from './res/img1.png'
 
 import IconButton from '@material-ui/core/IconButton'
@@ -10,6 +11,23 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 import LanguageIcon from '@material-ui/icons/Language'
 
 function WorkCard({ idx }) {
+    const [open, setOpen] = useState(false)
+    const onMoreBtnClicked = (idx) => {
+        setOpen(true)
+    }
+    const onDialogClosed = () => {
+        setOpen(false)
+    }
+    const descriptionElementRef = useRef(null)
+    React.useEffect(() => {
+        if (open) {
+            const { current: descriptionElement } = descriptionElementRef
+            if (descriptionElement !== null) {
+                descriptionElement.focus()
+            }
+        }
+    }, [open])
+
     if (idx + 1 > data.length) {
         return <div className="WorkCard-empty"> empty card</div>
     } else {
@@ -20,13 +38,10 @@ function WorkCard({ idx }) {
                 </div>
                 <div className="WorkCard-title">{data[idx]['title']}</div>
                 <div className="WorkCard-links">
-                    <IconButton color="primary">
-                        <GitHubIcon />
-                    </IconButton>
-                    <IconButton color="primary">
-                        <LanguageIcon />
-                    </IconButton>
-                    <Button className="WorkCard-links-more">
+                    <Button
+                        className="WorkCard-links-more"
+                        onClick={onMoreBtnClicked}
+                    >
                         더 알아보기 >
                     </Button>
                 </div>
@@ -37,6 +52,12 @@ function WorkCard({ idx }) {
                         ))}
                     </ul>
                 </div>
+                <WorkCardMore
+                    idx={idx}
+                    open={open}
+                    onClose={onDialogClosed}
+                    eleRef={descriptionElementRef}
+                />
             </div>
         )
     }

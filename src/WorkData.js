@@ -1,5 +1,5 @@
-function createData(title, year, desc, tech, links, from) {
-    return { title, year, desc, tech, links, from }
+function createData(title, year, desc, tech, links) {
+    return { title, year, desc, tech, links }
 }
 
 const rows = [
@@ -7,9 +7,9 @@ const rows = [
         '공유 원격 데스크톱 서비스',
         '2019 ~ 2021',
         [
-            '2019 - 2021, TmaxSoft',
+            '2019 - 2021, at TmaxSoft',
             '다중 사용자간 공유 원격 데스크톱 서비스',
-            'c++ Websocket Javascript Linux',
+            'C++ Websocket Javascript Linux Kubernetes Docker Bash',
             'ss',
             'ss',
             'ss',
@@ -18,8 +18,7 @@ const rows = [
             'ss',
         ],
         'c++ weboskcet lws js ...',
-        'aaaaaa',
-        'TmaxSoft그룹'
+        'aaaaaa'
     ),
     createData(
         'test1',
