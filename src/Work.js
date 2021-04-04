@@ -1,5 +1,5 @@
 import React from 'react'
-import './Work.css'
+import './css/Work.css'
 
 import WorkList from './WorkList.js'
 import data from './WorkData.js'

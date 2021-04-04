@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './WorkCard.css'
+import './css/WorkCard.css'
 
 import data from './WorkData.js'
 import WorkCardMore from './WorkCardMore.js'

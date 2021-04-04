@@ -1,5 +1,5 @@
 import React from 'react'
-import './WorkCardMore.css'
+import './css/WorkCardMore.css'
 
 import data from './WorkData.js'
 

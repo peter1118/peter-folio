@@ -1,5 +1,5 @@
 import React from 'react'
-import './AboutWrapper.css'
+import './css/AboutWrapper.css'
 
 function AboutWrapper({ data }) {
     return (
