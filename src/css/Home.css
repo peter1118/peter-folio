@@ -34,6 +34,7 @@
 }
 .Home-left-sub:hover {
     border-bottom: 2px solid #0a59bd;
+    color: #0a59bd;
 }
 .Home-right {
     width: 50%;

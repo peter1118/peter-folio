@@ -1,6 +1,8 @@
 import React from 'react'
 import './css/Home.css'
 
+import { Link } from 'react-router-dom'
+
 function Home() {
     return (
         <div className="Home">
@@ -11,12 +13,14 @@ function Home() {
                         프로답게 가치를 제공하고 싶은.
                         <br />
                         기술자로 살고 싶은. <br />
-                        사람을 키우고 싶은.{' '}
+                        사람을 키우고 싶은.
                     </div>
                 </div>
-                <div className="Home-left-sub" id="home-about">
-                    About me >
-                </div>
+                <Link to="/about" style={{ textDecoration: 'none' }}>
+                    <div className="Home-left-sub" id="home-about">
+                        About me >
+                    </div>
+                </Link>
             </div>
             <div className="Home-right">
                 <div className="Home-right-top">Home right top img</div>

@@ -5,6 +5,7 @@ import Home from './Home.js'
 import About from './About.js'
 import Footer from './Footer.js'
 import Work from './Work.js'
+import Contact from './Contact.js'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
@@ -81,9 +82,7 @@ function App() {
                 <Route exact path="/home" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/work" component={Work} />
-                {/*
-                <Route path="/contact" component={Contact} /> 
-                    */}
+                <Route path="/contact" component={Contact} />
             </Router>
         </div>
     )

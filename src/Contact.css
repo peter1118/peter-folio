@@ -1,0 +1,13 @@
+.Contact {
+    padding: 10vh 10vw;
+    height: 85vh;
+    background-color: #ffffff;
+}
+
+.Contact-btn {
+    margin: 5vh;
+    width: 50vw;
+}
+.Contact-btn-mail {
+    text-transform: unset !important;
+}
