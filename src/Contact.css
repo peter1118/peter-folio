@@ -3,10 +3,21 @@
     height: 85vh;
     background-color: #ffffff;
 }
+.Contact-wrapper {
+    width: 70vw;
+    background-color: #ececef;
+    border-radius: 25px;
+    padding: 5vh 5vw;
+}
+
+.Contact-title {
+    font-size: 50px;
+    margin: 5vh 0;
+}
 
 .Contact-btn {
-    margin: 5vh;
-    width: 50vw;
+    width: auto;
+    margin: 5vh 0;
 }
 .Contact-btn-mail {
     text-transform: unset !important;

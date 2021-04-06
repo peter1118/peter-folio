@@ -10,40 +10,50 @@ import Button from '@material-ui/core/Button'
 function Contact() {
     return (
         <div className="Contact">
-            <div className="Contact-title">
-                Contact ! Have a question or want to work together?
-            </div>
-            <div className="Contact-buttons">
-                <div className="Contact-btn">
-                    <Button
-                        variant="contained"
-                        color="default"
-                        startIcon={<MailIcon />}
-                        fullWidth={true}
-                        className="Contact-btn-mail"
-                    >
-                        songpetersd@gmail.com
-                    </Button>
-                </div>
-                <div className="Contact-btn">
-                    <Button
-                        variant="contained"
-                        color="default"
-                        startIcon={<LinkedInIcon />}
-                        fullWidth={true}
-                    >
-                        linkedin
-                    </Button>
-                </div>
-                <div className="Contact-btn">
-                    <Button
-                        variant="contained"
-                        color="default"
-                        startIcon={<GitHubIcon />}
-                        fullWidth={true}
-                    >
-                        git
-                    </Button>
+            <div className="Contact-wrapper">
+                <div className="Contact-title">Contact</div>
+                <div className="Contact-buttons">
+                    <div className="Contact-btn">
+                        <Button
+                            variant="contained"
+                            color="secondary"
+                            size="large"
+                            startIcon={<MailIcon />}
+                            fullWidth={true}
+                            className="Contact-btn-mail"
+                            style={{ justifyContent: 'flex-start' }}
+                        >
+                            songpetersd@gmail.com
+                        </Button>
+                    </div>
+                    <div className="Contact-btn">
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="large"
+                            startIcon={<LinkedInIcon />}
+                            fullWidth={true}
+                            style={{ justifyContent: 'flex-start' }}
+                            href="https://www.linkedin.com/in/peter-song-59569816b/"
+                            target="_blank"
+                        >
+                            linkedin
+                        </Button>
+                    </div>
+                    <div className="Contact-btn">
+                        <Button
+                            variant="contained"
+                            color="default"
+                            size="large"
+                            startIcon={<GitHubIcon />}
+                            fullWidth={true}
+                            style={{ justifyContent: 'flex-start' }}
+                            href="https://github.com/peter1118"
+                            target="_blank"
+                        >
+                            git
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>
