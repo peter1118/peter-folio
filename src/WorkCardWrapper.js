@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/WorkCardWrapper.css'
 
 import WorkCard from './WorkCard.js'
+import WorkCardMore from './WorkCardMore.js'
 
-function WorkCardWrapper({ startIdx, maxCount }) {
-    const startIdxList = []
-    for (let i = startIdx; i < startIdx + maxCount; i++) {
-        startIdxList.push(i)
+function WorkCardWrapper({ idx }) {
+    const [open, setOpen] = useState(false)
+    const onMoreBtnClicked = (idx) => {
+        setOpen(true)
+    }
+    const onDialogClosed = () => {
+        setOpen(false)
     }
     return (
         <div className="WorkCardWrapper">
-            {startIdxList.map((index) => (
-                <WorkCard key={index} idx={index} />
-            ))}
+            <WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />
+            <WorkCardMore idx={idx} open={open} onClose={onDialogClosed} />
         </div>
     )
 }

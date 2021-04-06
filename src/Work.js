@@ -16,15 +16,9 @@ function Work() {
     return (
         <div className="Work">
             <div className="Work-wrapper">
-                <div className="Work-top">
-                    <p>What I have done</p>
-                </div>
-                {startIdxList.map((startIdx) => (
-                    <WorkCardWrapper
-                        key={startIdx}
-                        startIdx={startIdx}
-                        maxCount={cardNumPerLine}
-                    />
+                <div className="Work-top">What I have done</div>
+                {data.map((row, index) => (
+                    <WorkCardWrapper key={index} idx={index} />
                 ))}
             </div>
         </div>

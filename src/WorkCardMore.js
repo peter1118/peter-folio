@@ -2,6 +2,7 @@ import React from 'react'
 import './css/WorkCardMore.css'
 
 import data from './WorkData.js'
+import moreData from './WorkMoreData.js'
 
 import Dialog from '@material-ui/core/Dialog'
 import DialogActions from '@material-ui/core/DialogActions'
@@ -32,8 +33,8 @@ function WorkCardMore({ idx, open, onClose }) {
                         >
                             개요
                         </Box>
-                        <Box textAlign="left">
-                            {data[idx]['more']['header'][0]}
+                        <Box textAlign="left" p={2}>
+                            {moreData[idx]['header'][0]}
                         </Box>
                         <Box
                             fontSize={18}
@@ -45,8 +46,8 @@ function WorkCardMore({ idx, open, onClose }) {
                         >
                             상세 설명
                         </Box>
-                        {data[idx]['more']['detail'].map((para, index) => (
-                            <Box key={index} textAlign="center">
+                        {moreData[idx]['detail'].map((para, index) => (
+                            <Box key={index} textAlign="center" p={2}>
                                 {para}
                             </Box>
                         ))}
@@ -61,19 +62,33 @@ function WorkCardMore({ idx, open, onClose }) {
                             맡은 역할
                         </Box>
                         <ul className="WorkCardMore-role">
-                            {data[idx]['more']['role'].map((para, index) => (
+                            {moreData[idx]['role'].map((para, index) => (
                                 <li key={index}>{para}</li>
                             ))}
                         </ul>
                     </Typography>
                 </DialogContent>
                 <DialogActions>
-                    <IconButton color="primary">
-                        <GitHubIcon />
-                    </IconButton>
-                    <IconButton color="primary">
-                        <LanguageIcon />
-                    </IconButton>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        size="smal"
+                        startIcon={<GitHubIcon />}
+                        href={data[idx]['links'][0]}
+                        target="_blank"
+                    >
+                        git
+                    </Button>
+                    <Button
+                        variant="contained"
+                        color="primary"
+                        size="smal"
+                        startIcon={<LanguageIcon />}
+                        href={data[idx]['links'][0]}
+                        target="_blank"
+                    >
+                        Visit
+                    </Button>
                 </DialogActions>
             </Dialog>
         </div>

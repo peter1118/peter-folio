@@ -7,30 +7,12 @@
     overflow-y: auto;
 }
 
-.Work-wrapper {
-    position: relative;
-    margin: 0 6vw;
-    background-color: #ffffff;
-    top: 5vh;
-    padding: 2% 2%;
-    box-shadow: 0 0 10px #c1c1c1;
-    border-radius: 20px;
-}
-
-.Work-top {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vh;
-}
-
-.Work-top > p {
-    margin: 0;
-    padding: 0;
-    font-size: 35px;
-    font-weight: 600;
-    color: #161618;
-}
-
 ul {
     margin: 0 0;
+    padding: 0 3vw;
+}
+.Work-top {
+    font-size: 40px;
+    margin-top: 3vh;
+    text-align: center;
 }
