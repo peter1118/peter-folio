@@ -1,35 +1,37 @@
 .WorkCard {
     display: flex;
-    margin: 5vh 0;
-    background-color: yellow;
+    justify-content: space-between;
+    margin-top: 5vh;
+    background-color: #EFEFEF;
     border-radius: 25px;
     width: 70vw;
-    padding-right: 2vw;
+    padding: 2vh 1vw;
 }
 .WorkCard .MuiButton-label {
     color: #0a59bd;
 }
 img {
-    height: 30vh;
+    width: 30vw;
 }
 .WorkCard-right{
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
+    align-items: right;
 }
 .WorkCard-right-top {
-    height: 50%;
+    height: 90%;
     padding-left: 3vw;
 }
 .WorkCard-right-bot {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 50%;
-}
-
-.WorkCard-right-bot div {
+    position: inline-block;
+    width: fit-content;
     color: #0a59bd;
     font-weight: 800;
     font-size: 15px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.WorkCard-right-bot:hover {
+    border-bottom:2px solid;
 }
