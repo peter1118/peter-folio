@@ -35,3 +35,16 @@ img {
 .WorkCard-right-bot:hover {
     border-bottom:2px solid;
 }
+.WorkCard-right-top-title {
+    display: inline-block;
+    text-align:center;
+    font-size: 25px;
+    font-weight: 400;
+    border-bottom: 2px solid #C4C4C4;
+    margin-bottom: 2vh;
+}
+.WorkCard-right-top-list ul {
+    list-style:none;
+    margin: 0 0;
+    padding: 0 0;
+}

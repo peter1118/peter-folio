@@ -15,7 +15,18 @@ function WorkCard({ idx, onMoreClicked }) {
         <div className="WorkCard">
             <img src={img1} />
             <div className="WorkCard-right">
-                <div className="WorkCard-right-top">{data[idx]['title']}</div>
+                <div className="WorkCard-right-top">
+                    <div className="WorkCard-right-top-title">
+                        {data[idx]['title']}
+                    </div>
+                    <div className="WorkCard-right-top-list">
+                        <ul>
+                            {data[idx]['desc'].map((list, index) => (
+                                <li key={index}>{list}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
                 <div className="WorkCard-right-bot" onClick={onMoreClicked}>
                     더 알아보기 >
                 </div>
