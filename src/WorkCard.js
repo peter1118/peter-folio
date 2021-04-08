@@ -13,11 +13,13 @@ import LanguageIcon from '@material-ui/icons/Language'
 function WorkCard({ idx, onMoreClicked }) {
     return (
         <div className="WorkCard">
-            <img src={img1} />
+            <div className="WorkCard-left">
+                <img src={img1} />
+            </div>
             <div className="WorkCard-right">
                 <div className="WorkCard-right-top">
                     <div className="WorkCard-right-top-title">
-                        {data[idx]['title']}
+                        <h3>{data[idx]['title']}</h3>
                     </div>
                     <div className="WorkCard-right-top-list">
                         <ul>

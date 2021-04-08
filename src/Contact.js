@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css'
+import './css/Contact.css'
 
 import Icon from '@material-ui/core/Icon'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -11,7 +11,7 @@ function Contact() {
     return (
         <div className="Contact">
             <div className="Contact-wrapper">
-                <div className="Contact-title">Contact</div>
+                <div className="Contact-title">Get in touch</div>
                 <div className="Contact-buttons">
                     <div className="Contact-btn">
                         <Button

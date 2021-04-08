@@ -2,8 +2,6 @@
     width: auto;
     height: 93vh;
     background-color: #FFFFFF;
-    padding-left: 3vw;
-    padding-right: 3vw;
     overflow-y: auto;
 }
 
@@ -12,8 +10,11 @@ ul {
     padding: 0 3vw;
 }
 .Work-top {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
-    margin-top: 3vh;
     text-align: center;
+    color: #999999;
+    border-bottom: 1px solid #C8C8CE;
+    margin: 0 8vw;
+    padding: 8vh 0;
 }
