@@ -1,19 +1,36 @@
 .AboutWrapper {
     margin: 8vh 12vw;
     padding: 5vh 0 5vh 0;
-    border-bottom: 1px solid #C8C8CE;
-    border-top: 1px solid #C8C8CE;
-    display:flex;
+    border-bottom: 1px solid #c8c8ce;
+    border-top: 1px solid #c8c8ce;
+    display: flex;
 }
-.AboutWrapper-title {
+.AboutWrapperNarrow {
+    margin: 5vh 5vw;
+    padding: 5vh 2vw;
+    border-bottom: 1px solid #c8c8ce;
+    border-top: 1px solid #c8c8ce;
+}
+.AboutWrapperNarrow .AboutWrapper-title {
+    width: 100%;
+    color: #1d1d1e;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1vh 2vw;
+}
+.AboutWrapper .AboutWrapper-title {
     width: 25vw;
-    color: #1D1D1E; 
+    color: #1d1d1e;
     font-size: 40px;
     font-weight: 600;
     padding-right: 1vw;
 }
-.AboutWrapper-content {
+.AboutWrapperNarrow .AboutWrapper-content {
+    color: #161618;
+    padding: 1vh 2vw;
+}
+.AboutWrapper .AboutWrapper-content {
     width: 75vw;
-    color: #161618; 
+    color: #161618;
     padding-left: 1vw;
 }

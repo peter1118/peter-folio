@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './css/WorkCardWrapper.css'
 
+import { useMediaQuery } from 'react-responsive'
+
 import WorkCard from './WorkCard.js'
 import WorkCardNarrow from './WorkCardNarrow.js'
 import WorkCardMore from './WorkCardMore.js'
-import { useMediaQuery } from 'react-responsive'
 
 function WorkCardWrapper({ idx }) {
     const [open, setOpen] = useState(false)
