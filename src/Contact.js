@@ -1,7 +1,6 @@
 import React from 'react'
 import './css/Contact.css'
 
-import Icon from '@material-ui/core/Icon'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import MailIcon from '@material-ui/icons/Mail'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'

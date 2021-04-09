@@ -3,14 +3,12 @@ import './css/App.css'
 
 import Home from './Home.js'
 import About from './About.js'
-import Footer from './Footer.js'
 import Work from './Work.js'
 import Contact from './Contact.js'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import {
-    useRouteMatch,
     Link,
     NavLink,
     Route,

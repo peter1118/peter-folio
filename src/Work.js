@@ -1,7 +1,6 @@
 import React from 'react'
 import './css/Work.css'
 
-import WorkList from './WorkList.js'
 import data from './WorkData.js'
 import WorkCardWrapper from './WorkCardWrapper.js'
 
