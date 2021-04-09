@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './css/WorkCardWrapper.css'
 
 import WorkCard from './WorkCard.js'
+import WorkCardNarrow from './WorkCardNarrow.js'
 import WorkCardMore from './WorkCardMore.js'
 
 function WorkCardWrapper({ idx }) {
@@ -14,7 +15,8 @@ function WorkCardWrapper({ idx }) {
     }
     return (
         <div className="WorkCardWrapper">
-            <WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />
+            {/*<WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />*/}
+            <WorkCardNarrow idx={idx} onMoreClicked={onMoreBtnClicked} />
             <WorkCardMore idx={idx} open={open} onClose={onDialogClosed} />
         </div>
     )
