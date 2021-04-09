@@ -4,6 +4,7 @@ import './css/WorkCardWrapper.css'
 import WorkCard from './WorkCard.js'
 import WorkCardNarrow from './WorkCardNarrow.js'
 import WorkCardMore from './WorkCardMore.js'
+import { useMediaQuery } from 'react-responsive'
 
 function WorkCardWrapper({ idx }) {
     const [open, setOpen] = useState(false)
@@ -13,10 +14,24 @@ function WorkCardWrapper({ idx }) {
     const onDialogClosed = () => {
         setOpen(false)
     }
+    const isPc = useMediaQuery({
+        query: '(min-width:1024px)',
+    })
+    const isTablet = useMediaQuery({
+        query: '(min-width:768px) and (max-width:1023px)',
+    })
+    const isMobile = useMediaQuery({
+        query: '(max-width:767px)',
+    })
     return (
         <div className="WorkCardWrapper">
-            {/*<WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />*/}
-            <WorkCardNarrow idx={idx} onMoreClicked={onMoreBtnClicked} />
+            {isPc && <WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />}
+            {isTablet && (
+                <WorkCard idx={idx} onMoreClicked={onMoreBtnClicked} />
+            )}
+            {isMobile && (
+                <WorkCardNarrow idx={idx} onMoreClicked={onMoreBtnClicked} />
+            )}
             <WorkCardMore idx={idx} open={open} onClose={onDialogClosed} />
         </div>
     )

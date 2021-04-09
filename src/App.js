@@ -9,7 +9,6 @@ import Contact from './Contact.js'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import { useMediaQuery } from 'react-responsive'
 import {
     useRouteMatch,
     Link,
@@ -19,15 +18,6 @@ import {
 } from 'react-router-dom'
 
 function App() {
-    const isPc = useMediaQuery({
-        query: '(min-width:1024px)',
-    })
-    const isTablet = useMediaQuery({
-        query: '(min-width:768px) and (max-width:1023px)',
-    })
-    const isMobile = useMediaQuery({
-        query: '(max-width:767px)',
-    })
     const useStyles = makeStyles((theme) => ({
         root: {
             '& > *': {
