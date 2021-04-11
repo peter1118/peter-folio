@@ -1,0 +1,10 @@
+.AboutScoreBar-selected {
+    background-color: #ea7d4e;
+}
+.AboutScoreBar-non {
+    background-color: #ea7d4e;
+    opacity: 0.3;
+}
+.AboutScoreBar {
+    padding: 0.5vh 2vw;
+}

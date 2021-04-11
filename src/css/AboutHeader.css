@@ -1,0 +1,11 @@
+.AboutHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 5vw;
+}
+.AboutHeader-left {
+    background-color: red;
+    width: 20vw;
+    text-align: center;
+}
