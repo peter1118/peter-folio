@@ -7,8 +7,7 @@
     height: 7vh;
     background-color: #262626;
     color: #cdcdcd;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding: 0 6vw;
 }
 
 .HeaderRight {
