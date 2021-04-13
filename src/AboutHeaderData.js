@@ -2,6 +2,18 @@ function createData(title, level) {
     return { title, level }
 }
 
-const rows = [createData('C++', 2)]
+const lang = [
+    createData('C++', 2),
+    createData('Javascript', 1),
+    createData('CSS', 0),
+]
 
-export default rows
+const tool = [
+    createData('Linux', 2),
+    createData('React', 1),
+    createData('Node', 0),
+    createData('Docker', 2),
+    createData('Kubernetes', 0),
+]
+
+export { lang, tool }

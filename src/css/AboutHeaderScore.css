@@ -1,9 +1,16 @@
 .AboutHeaderScore {
-    margin: 1vh 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+.AboutScoreBar-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40vw;
 }
-.AboutHeaderScore h3{
+.AboutHeaderScore h3 {
     margin: 0 2vw;
+    width: 8vw;
+    text-align: left;
+    padding-top: 10px;
 }

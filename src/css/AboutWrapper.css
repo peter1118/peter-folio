@@ -1,14 +1,12 @@
 .AboutWrapper {
-    margin: 8vh 12vw;
-    padding: 5vh 0 5vh 0;
-    border-bottom: 1px solid #c8c8ce;
+    margin: 8vh 12vw 0 12vw;
+    padding: 5vh 5vw 0 5vw;
     border-top: 1px solid #c8c8ce;
     display: flex;
 }
 .AboutWrapperNarrow {
-    margin: 5vh 5vw;
-    padding: 5vh 2vw;
-    border-bottom: 1px solid #c8c8ce;
+    margin: 5vh 5vw 0 5vw;
+    padding: 5vh 2vw 0 2vw;
     border-top: 1px solid #c8c8ce;
 }
 .AboutWrapperNarrow .AboutWrapper-title {
@@ -19,7 +17,7 @@
     padding: 1vh 2vw;
 }
 .AboutWrapper .AboutWrapper-title {
-    width: 25vw;
+    width: 30vw;
     color: #1d1d1e;
     font-size: 40px;
     font-weight: 600;
@@ -28,9 +26,11 @@
 .AboutWrapperNarrow .AboutWrapper-content {
     color: #161618;
     padding: 1vh 2vw;
+    font-size: 20px;
 }
 .AboutWrapper .AboutWrapper-content {
     width: 75vw;
     color: #161618;
     padding-left: 1vw;
+    font-size: 20px;
 }

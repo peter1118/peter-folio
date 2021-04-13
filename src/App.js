@@ -8,12 +8,7 @@ import Contact from './Contact.js'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import {
-    Link,
-    NavLink,
-    Route,
-    BrowserRouter as Router,
-} from 'react-router-dom'
+import { Link, NavLink, Route, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
     const useStyles = makeStyles((theme) => ({
@@ -24,7 +19,6 @@ function App() {
         },
     }))
     const classes = useStyles()
-    console.log('App.js')
     return (
         <div className="App">
             <Router>

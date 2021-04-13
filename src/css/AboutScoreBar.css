@@ -1,10 +1,17 @@
 .AboutScoreBar-selected {
-    background-color: #ea7d4e;
+    background-color: #bcbcc2;
+    opacity: 0.7;
 }
 .AboutScoreBar-non {
-    background-color: #ea7d4e;
+    background-color: #bcbcc2;
     opacity: 0.3;
 }
 .AboutScoreBar {
     padding: 0.5vh 2vw;
+    margin: 0.5vh 0;
+    width: 1vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
