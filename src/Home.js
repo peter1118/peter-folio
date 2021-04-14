@@ -2,10 +2,24 @@ import React from 'react'
 import './css/Home.css'
 
 import { Link } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 
 function Home() {
+    /*
+    const isPc = useMediaQuery({
+        query: '(min-width:1024px)',
+    })
+    const isTablet = useMediaQuery({
+        query: '(min-width:768px) and (max-width:1023px)',
+    })
+    */
+    const isMobile = useMediaQuery({
+        query: '(max-width:767px)',
+    })
+    let className = 'Home'
+    if (isMobile) className = 'Home-narrow'
     return (
-        <div className="Home">
+        <div className={className}>
             <div className="Home-left">
                 <div className="Home-left-main">
                     Hi, I'm Peter Song
