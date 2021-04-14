@@ -14,6 +14,7 @@ const tool = [
     createData('Node', 0),
     createData('Docker', 2),
     createData('Kubernetes', 0),
+    createData('Bash', 1),
 ]
 
 export { lang, tool }

@@ -7,16 +7,14 @@
 }
 .Home-left {
     width: 45vw;
-    margin-top: 8vh;
-    margin-bottom: 8vh;
-    margin-left: 4vw;
+    padding: 8vh 8vw;
     -webkit-animation: fadein 2s;
 }
 .Home-left-main {
-    margin-top: 40vh;
     font-size: 50px;
     font-weight: 500;
-    width: 100%;
+    text-align: left;
+    padding-top: 25vh;
 }
 .Home-left-main-sub {
     margin-top: 3vh;
@@ -61,4 +59,25 @@
     to {
         opacity: 1;
     }
+}
+/*mobile*/
+.HomeNarrow {
+    background-color: #ffffff;
+    color: #161618;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.HomeNarrow-top-img {
+    background-color: #ececef;
+    height: 40vh;
+    padding: 10vh 10vw;
+}
+.HomeNarrow-bottom {
+    padding: 0 10vw;
+}
+.HomeNarrow-bottom-main {
+    font-size: 50px;
+    font-weight: 500;
 }
