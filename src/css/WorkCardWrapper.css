@@ -4,8 +4,9 @@
     align-items: flex-start;
 }*/
 .WorkCardWrapper {
-    margin: 0 8vw;
     padding: 7vh 0 7vh 0;
-    border-bottom: 1px solid #C8C8CE;
-    display:flex;
+    border-bottom: 1px solid #c8c8ce;
+    display: flex;
+    justify-content: start;
+    margin: 0 8vw;
 }

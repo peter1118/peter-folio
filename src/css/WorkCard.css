@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     /*background-color: #EFEFEF;*/
-    padding: 2vh 1vw;
+    padding: 2vh 0 2vh 1vw;
 }
 .WorkCardNarrow {
     display: flex;
@@ -14,16 +14,14 @@
     color: #0a59bd;
 }
 .WorkCard-left {
-    width: 80vw;
     padding-left: 1vw;
 }
 .WorkCard img {
-    width: 100%;
+    width: 550px;
 }
 .WorkCard-right {
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: right;
     margin: 0 2vw;
     padding: 4vh 4vw;
