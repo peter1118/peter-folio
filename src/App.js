@@ -8,7 +8,13 @@ import Contact from './Contact.js'
 
 import { Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import { Link, NavLink, Route, BrowserRouter as Router } from 'react-router-dom'
+import {
+    Link,
+    Redirect,
+    NavLink,
+    Route,
+    BrowserRouter as Router,
+} from 'react-router-dom'
 
 function App() {
     const useStyles = makeStyles((theme) => ({
@@ -27,7 +33,7 @@ function App() {
                         <Button
                             className="Header-button"
                             component={NavLink}
-                            to={'/'}
+                            to={'/home'}
                             activeClassName="Header-selected"
                         >
                             Home
@@ -61,7 +67,10 @@ function App() {
                         </div>
                     </div>
                 </div>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/">
+                    <Redirect to="/home" />
+                </Route>
+                <Route path="/home" component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/work" component={Work} />
                 <Route path="/contact" component={Contact} />
