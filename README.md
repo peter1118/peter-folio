@@ -2,6 +2,7 @@
 ## Introduction
 - 개인 포트폴리오 사이트를 갖고 싶어서 개발한 static web app
 - 회사에서 새로 맡게된 React JS 프로젝트 대비, React JS 공부용으로 개발한 app
+- 반응형 web app
 ## Component 구성
 - Header, react-router, Home, About, Work, Contact
 ## 사용한 기술
