@@ -27,7 +27,7 @@ function App() {
                         <Button
                             className="Header-button"
                             component={NavLink}
-                            to={'/home'}
+                            to={'/'}
                             activeClassName="Header-selected"
                         >
                             Home
