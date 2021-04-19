@@ -10,7 +10,7 @@
 }
 .AboutHeaderScore h3 {
     margin: 0 2vw;
-    width: 8vw;
+    width: fit-content;
     text-align: left;
     padding-top: 10px;
 }
