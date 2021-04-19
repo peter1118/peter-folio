@@ -3,6 +3,7 @@ import './css/Home.css'
 
 import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
+import data from './HomeData.js'
 
 function Home() {
     const isMobile = useMediaQuery({
@@ -15,10 +16,11 @@ function Home() {
                     <div className="Home-left-main">
                         <h4>Hi, I'm Peter Song</h4>
                         <div className="Home-left-main-sub">
-                            프로답게 가치를 제공하고 싶은.
-                            <br />
-                            기술자로 살고 싶은. <br />
-                            사람을 키우고 싶은.
+                            <ul>
+                                {data.map((desc, index) => (
+                                    <li key={index}> {desc} </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                     <Link to="/about" style={{ textDecoration: 'none' }}>
@@ -40,12 +42,13 @@ function Home() {
                 </div>
                 <div className="HomeNarrow-bottom">
                     <div className="HomeNarrow-bottom-main">
-                        Hi, I'm Peter Song
+                        <h4>Hi, I'm Peter Song</h4>
                         <div className="Home-left-main-sub">
-                            프로답게 가치를 제공하고 싶은.
-                            <br />
-                            기술자로 살고 싶은. <br />
-                            사람을 키우고 싶은.
+                            <ul>
+                                {data.map((desc, index) => (
+                                    <li key={index}> {desc} </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                     <Link to="/about" style={{ textDecoration: 'none' }}>
