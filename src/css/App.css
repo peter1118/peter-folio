@@ -8,10 +8,15 @@
     background-color: #262626;
     color: #cdcdcd;
     padding: 0 6vw;
+    justify-content: space-between; /* Pack flex items from the end */
+    overflow-y: scroll;
 }
 
-.HeaderRight {
-    margin-left: auto;
+.HeaderRightNarrow {
+    background-color: #262626;
+    color: #cdcdcd;
+    display: flex;
+    justify-content: flex-end; /* Pack flex items from the end */
 }
 
 /* Material-ui */
