@@ -64,10 +64,12 @@
 .HomeNarrow {
     background-color: #ffffff;
     color: #161618;
-    height: 93vh;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+.HomeNarrow h4 {
+    margin: 5vh 0;
 }
 .HomeNarrow-top-img {
     background-color: #ececef;

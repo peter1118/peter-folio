@@ -15,12 +15,8 @@ import {
     Route,
     BrowserRouter as Router,
 } from 'react-router-dom'
-import { useMediaQuery } from 'react-responsive'
 
 function App() {
-    const isMobile = useMediaQuery({
-        query: '(max-width:767px)',
-    })
     const useStyles = makeStyles((theme) => ({
         root: {
             '& > *': {
@@ -59,22 +55,7 @@ function App() {
                             Work
                         </Button>
                     </div>
-                    {!isMobile && (
-                        <div className="HeaderRight">
-                            <div className={classes.root}>
-                                <Button
-                                    className="Header-button"
-                                    component={Link}
-                                    to={'/contact'}
-                                >
-                                    Contact
-                                </Button>
-                            </div>
-                        </div>
-                    )}
-                </div>
-                {isMobile && (
-                    <div className="HeaderRightNarrow">
+                    <div className="HeaderRight">
                         <div className={classes.root}>
                             <Button
                                 className="Header-button"
@@ -85,7 +66,7 @@ function App() {
                             </Button>
                         </div>
                     </div>
-                )}
+                </div>
                 <Route exact path="/">
                     <Redirect to="/home" />
                 </Route>

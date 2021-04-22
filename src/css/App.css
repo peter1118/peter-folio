@@ -9,7 +9,13 @@
     color: #cdcdcd;
     padding: 0 6vw;
     justify-content: space-between; /* Pack flex items from the end */
+    align-items: center;
     overflow-y: scroll;
+}
+
+.Header a {
+    margin: 0 1.5vw;
+    padding: 0 0;
 }
 
 .HeaderRightNarrow {
