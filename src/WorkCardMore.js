@@ -82,7 +82,7 @@ function WorkCardMore({ idx, open, onClose }) {
                         color="primary"
                         size="smal"
                         startIcon={<LanguageIcon />}
-                        href={data[idx]['links'][0]}
+                        href={data[idx]['links'][1]}
                         target="_blank"
                     >
                         Visit
