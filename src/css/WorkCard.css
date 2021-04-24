@@ -44,6 +44,7 @@
     font-size: 15px;
     cursor: pointer;
     padding-top: 2vh;
+    border-bottom: 2px solid transparent;
 }
 .WorkCard-right-bot:hover {
     border-bottom: 2px solid;
