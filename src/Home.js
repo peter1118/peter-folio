@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import data from './HomeData.js'
 
+import myPicture from './res/myPicture.JPG'
+
 function Home() {
     const isMobile = useMediaQuery({
         query: '(max-width:767px)',
@@ -14,7 +16,7 @@ function Home() {
             <div className="Home">
                 <div className="Home-left">
                     <div className="Home-left-main">
-                        <h4>Hi, I'm Peter Song</h4>
+                        <h3>Hi, I'm Peter Song</h3>
                         <div className="Home-left-main-sub">
                             <ul>
                                 {data.map((desc, index) => (
@@ -30,7 +32,7 @@ function Home() {
                     </Link>
                 </div>
                 <div className="Home-right">
-                    <div className="Home-right-top">Home right top img</div>
+                    <img src={myPicture} alt={'myPicture'} />
                 </div>
             </div>
         )
@@ -38,18 +40,11 @@ function Home() {
         return (
             <div className="HomeNarrow">
                 <div className="HomeNarrow-top">
-                    <div className="HomeNarrow-top-img">Home right top img</div>
+                    <img src={myPicture} alt={'myPicture'} />
                 </div>
                 <div className="HomeNarrow-bottom">
                     <div className="HomeNarrow-bottom-main">
                         <h4>Hi, I'm Peter Song</h4>
-                        <div className="Home-left-main-sub">
-                            <ul>
-                                {data.map((desc, index) => (
-                                    <li key={index}> {desc} </li>
-                                ))}
-                            </ul>
-                        </div>
                     </div>
                     <Link to="/about" style={{ textDecoration: 'none' }}>
                         <div className="Home-left-sub" id="home-about">

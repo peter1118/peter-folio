@@ -1,8 +1,8 @@
 .WorkCard {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     /*background-color: #EFEFEF;*/
-    padding: 2vh 0 2vh 1vw;
+    padding: 2vh 0 2vh 7vw;
 }
 .WorkCardNarrow {
     display: flex;
@@ -10,21 +10,26 @@
     align-items: center;
     width: 100%;
 }
+.WorkCardNarrow img {
+    width: 100%;
+}
 .WorkCard .MuiButton-label {
     color: #0a59bd;
 }
 .WorkCard-left {
     padding-left: 1vw;
+    width: 40%;
+    height: 100%;
 }
 .WorkCard img {
-    width: 550px;
+    /*width: 550px;*/
+    width: 100%;
 }
 .WorkCard-right {
     display: flex;
     flex-direction: column;
-    align-items: right;
-    margin: 0 2vw;
-    padding: 4vh 3vw;
+    justify-content: space-between;
+    margin-left: 8vw;
 }
 .WorkCard-right-top {
     height: 90%;

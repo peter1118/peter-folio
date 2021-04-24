@@ -2,13 +2,17 @@ import React from 'react'
 import './css/WorkCard.css'
 
 import data from './WorkData.js'
-import img1 from './res/img1.png'
 
 function WorkCard({ idx, onMoreClicked }) {
+  //  const img  = require(`../public/images/peter-folio.png`);
+    const images = require.context('../public/images', true);
+    const img = images(`./${data[idx]['pic']}`).default;
+    
     return (
         <div className="WorkCardNarrow">
             <div className="WorkCardNarrow-top">
-                <img src={img1} alt={data[idx]['title']} />
+                {/*<img src={`./res/${data[idx]['pic']}`} alt={data[idx]['title']} />*/}
+                <img src={img} alt={data[idx]['title']} />
             </div>
             <div className="WorkCardNarrow-bottom">
                 <div className="WorkCard-right-top">

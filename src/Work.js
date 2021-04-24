@@ -10,7 +10,7 @@ function Work() {
     return (
         <div className="Work">
             <div className="Work-wrapper">
-                <div className="Work-top">portfolio</div>
+                <div className="Work-top">WORKS</div>
                 {data.map((row, index) => (
                     <WorkCardWrapper key={index} idx={index} />
                 ))}

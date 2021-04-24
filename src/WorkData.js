@@ -1,5 +1,5 @@
-function createData(title, desc, links) {
-    return { title, desc, links }
+function createData(title, desc, links, pic) {
+    return { title, desc, links, pic }
 }
 
 const rows = [
@@ -10,7 +10,8 @@ const rows = [
             'React JS, Firebase',
             '2021, by my self',
         ],
-        ['https://github.com/peter1118/peter-folio', '']
+        ['https://github.com/peter1118/peter-folio', ''],
+        'peter-folio.png'
     ),
     createData(
         '다중 사용자간 공유 원격 데스크톱 서비스',
@@ -19,7 +20,8 @@ const rows = [
             'C++ Websocket Javascript',
             '2019 - 2021, at TmaxSoft그룹',
         ],
-        ['', '']
+        ['', ''],
+        'peter-folio.png'
     ),
 ]
 

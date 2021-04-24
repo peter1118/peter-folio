@@ -45,7 +45,7 @@ function WorkCardMore({ idx, open, onClose }) {
                             상세 설명
                         </Box>
                         {moreData[idx]['detail'].map((para, index) => (
-                            <Box key={index} textAlign="center" p={2}>
+                            <Box key={index} p={2}>
                                 {para}
                             </Box>
                         ))}
