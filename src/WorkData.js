@@ -10,7 +10,7 @@ const rows = [
             'React JS, Firebase',
             '2021, by my self',
         ],
-        ['https://github.com/peter1118/peter-folio', ''],
+        ['https://github.com/peter1118/peter-folio', 'https://peter-folio.web.app'],
         'peter-folio.png'
     ),
     createData(
