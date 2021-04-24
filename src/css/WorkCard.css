@@ -3,12 +3,14 @@
     justify-content: flex-start;
     /*background-color: #EFEFEF;*/
     padding: 2vh 0 2vh 7vw;
+    height: 100%;
 }
 .WorkCardNarrow {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 .WorkCardNarrow img {
     width: 100%;
@@ -41,6 +43,7 @@
     font-weight: 800;
     font-size: 15px;
     cursor: pointer;
+    padding-top: 2vh;
 }
 .WorkCard-right-bot:hover {
     border-bottom: 2px solid;

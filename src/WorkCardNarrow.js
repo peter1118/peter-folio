@@ -15,7 +15,6 @@ function WorkCard({ idx, onMoreClicked }) {
                 <img src={img} alt={data[idx]['title']} />
             </div>
             <div className="WorkCardNarrow-bottom">
-                <div className="WorkCard-right-top">
                     <div className="WorkCard-right-top-title">
                         <h3>{data[idx]['title']}</h3>
                     </div>
@@ -26,7 +25,6 @@ function WorkCard({ idx, onMoreClicked }) {
                             ))}
                         </ul>
                     </div>
-                </div>
                 <div className="WorkCard-right-bot" onClick={onMoreClicked}>
                     더 알아보기 >
                 </div>
