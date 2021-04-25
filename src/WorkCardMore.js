@@ -15,6 +15,14 @@ import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 
 function WorkCardMore({ idx, open, onClose }) {
+    let gitFlag = true
+    let visitFlag = true
+    if (data[idx]['links'][0] === '') {
+        gitFlag = false
+    }
+    if (data[idx]['links'][1] === '') {
+        visitFlag = false
+    }
     return (
         <div className="WorkCardMore">
             <Dialog open={open} onClose={onClose}>
@@ -67,26 +75,30 @@ function WorkCardMore({ idx, open, onClose }) {
                     </Typography>
                 </DialogContent>
                 <DialogActions>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        size="smal"
-                        startIcon={<GitHubIcon />}
-                        href={data[idx]['links'][0]}
-                        target="_blank"
-                    >
-                        git
-                    </Button>
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        size="smal"
-                        startIcon={<LanguageIcon />}
-                        href={data[idx]['links'][1]}
-                        target="_blank"
-                    >
-                        Visit
-                    </Button>
+                    {gitFlag && (
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="smal"
+                            startIcon={<GitHubIcon />}
+                            href={data[idx]['links'][0]}
+                            target="_blank"
+                        >
+                            git
+                        </Button>
+                    )}
+                    {visitFlag && (
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            size="smal"
+                            startIcon={<LanguageIcon />}
+                            href={data[idx]['links'][1]}
+                            target="_blank"
+                        >
+                            Visit
+                        </Button>
+                    )}
                 </DialogActions>
             </Dialog>
         </div>

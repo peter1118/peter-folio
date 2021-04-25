@@ -21,7 +21,7 @@ const rows = [
             '2019 - 2021, at TmaxSoft그룹',
         ],
         ['', ''],
-        'peter-folio.png'
+        'loading.jpg'
     ),
 ]
 
