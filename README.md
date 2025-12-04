@@ -7,6 +7,6 @@
 - Header, react-router, Home, About, Work, Contact
 ## 사용한 기술
 - React JS, Firebase hosting
-## ToDo test
+## ToDo test te
 - 모든 데이터를 fire store에서 가져오기
 - 개인 블로그 용도로 
